@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Colors - Dark theme (controlled by backend) */
+    --background: #0a0a0a;
+    --foreground: #ffffff;
+
+    /* Card */
+    --card: #171717;
+    --card-foreground: #ffffff;
+
+    /* Primary */
+    --primary: #8B5CF6;
+    --primary-foreground: #ffffff;
+
+    /* Secondary */
+    --secondary: #282828;
+    --secondary-foreground: #dcdcdc;
+
+    /* Muted */
+    --muted: #3c3c3c;
+    --muted-foreground: #a0a0a0;
+
+    /* Accent */
+    --accent: #282828;
+    --accent-foreground: #dcdcdc;
+
+    /* Destructive */
+    --destructive: #EF4444;
+    --destructive-foreground: #ffffff;
+
+    /* Border / Input / Ring */
+    --border: #262626;
+    --input: #9ca3af;
+    --ring: #8B5CF6;
+
+    /* Radius */
+    --radius: 0.5rem;
+
+    /* Brand */
+    --brand-medium: #8B5CF6;
+
+    /* Heading */
+    --heading: #251919;
+
+    /* Overlay */
+    --overlay: rgba(0, 0, 0, 0.55);
+    --popover: #1C1C1E;
+
+    /* Brand / Action Colors */
+    --brand-purple: #8B5CF6;
+    --destructive-red: #FF453A;
+
+    /* district-clone Orange */
+    --district_clone_orange: #9b44c7;
+  }
+}
