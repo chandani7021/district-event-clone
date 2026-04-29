@@ -1,4 +1,4 @@
-# District Clone (district)
+# District Clone
 
 A premium, high-performance event discovery and booking mobile application built with **React Native** and **Expo**. This project is a feature-rich clone of the District/district platform, focusing on seamless user experience, interactive seating charts, and modern UI/UX principles.
 
