@@ -1,87 +1,96 @@
-# Minimal Template
+# District Clone (Tikiti)
 
-This is a [React Native](https://reactnative.dev/) project built with [Expo](https://expo.dev/) and [React Native Reusables](https://reactnativereusables.com).
+A premium, high-performance event discovery and booking mobile application built with **React Native** and **Expo**. This project is a feature-rich clone of the District/Tikiti platform, focusing on seamless user experience, interactive seating charts, and modern UI/UX principles.
 
-It was initialized using the following command:
+## 🚀 Features
 
+- **Event Discovery**: Browse upcoming events by category, artist, or location with a polished home screen.
+- **Interactive Seating Charts**: Integration with [Seats.io](https://seats.io/) for real-time seat selection and booking.
+- **Secure Authentication**: Phone-based authentication with OTP autofill and custom verification flows.
+- **Dynamic Search**: Robust search functionality to find events, artists, and venues.
+- **Hotlist**: Save your favorite events for quick access later.
+- **Artist & Category Pages**: Dedicated sections to explore events based on specific artists or genres.
+- **Dark & Light Mode**: Full theme support powered by NativeWind and React Native Reusables.
+- **Edge-to-Edge Design**: Optimized for modern devices with transparent status bars and navigation bars.
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Expo SDK 54](https://expo.dev/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Navigation**: [Expo Router](https://docs.expo.dev/router/introduction/) (File-based routing)
+- **Styling**: [NativeWind](https://www.nativewind.dev/) (Tailwind CSS for React Native)
+- **UI Components**: [React Native Reusables](https://reactnativereusables.com/) (Shadcn-like components for RN)
+- **Animations**: [React Native Reanimated](https://docs.swmansion.com/react-native-reanimated/)
+- **Seating Charts**: [@seatsio/seatsio-react-native](https://github.com/seatsio/seatsio-react-native)
+- **Icons**: [Lucide React Native](https://lucide.dev/)
+
+## 📂 Project Structure
+
+```text
+├── app/                  # Expo Router directory (screens and layouts)
+│   ├── auth/             # Authentication flow (Login, OTP)
+│   ├── booking/          # Seating selection and checkout
+│   ├── events/           # Event listing and details
+│   └── home/             # Main landing pages
+├── components/           # Reusable UI components
+│   ├── ui/               # Base primitive components (Buttons, Inputs, etc.)
+│   ├── auth/             # Authentication-specific components
+│   └── booking/          # Seating chart and booking UI
+├── constants/            # API endpoints, theme colors, and static data
+├── hooks/                # Custom React hooks
+├── services/             # API and third-party service logic
+├── store/                # State management (Zustand/Redux)
+└── assets/               # Local images, fonts, and icons
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (LTS)
+- [PNPM](https://pnpm.io/) (Recommended) or NPM/Yarn
+- [Expo Go](https://expo.dev/go) app on your physical device for testing
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/chandani7021/district-event-clone.git
+   cd district-clone
+   ```
+
+2. Install dependencies:
+   ```bash
+   pnpm install
+   ```
+
+3. Start the development server:
+   ```bash
+   pnpm dev
+   ```
+
+4. Open the app:
+   - Scan the QR code with **Expo Go** (Android) or the **Camera app** (iOS).
+   - Press `i` for iOS Simulator or `a` for Android Emulator.
+
+## 📱 Development Builds
+
+For native feature testing (like Seats.io or OTP autofill), a development build is recommended:
+
+### Android Dev Build
 ```bash
-npx @react-native-reusables/cli@latest init -t district-clone-consumer-mobile
+JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home pnpm expo run:android
 ```
 
-## Getting Started
-
-To run the development server:
-
+### EAS Build (Preview)
 ```bash
-    npm run dev
-    # or
-    yarn dev
-    # or
-    pnpm dev
-    # or
-    bun dev
-```
-
-This will start the Expo Dev Server. Open the app in:
-
-- **iOS**: press `i` to launch in the iOS simulator _(Mac only)_
-- **Android**: press `a` to launch in the Android emulator
-- **Web**: press `w` to run in a browser
-
-You can also scan the QR code using the [Expo Go](https://expo.dev/go) app on your device. This project fully supports running in Expo Go for quick testing on physical devices.
-
-## Adding components
-
-You can add more reusable components using the CLI:
-
-```bash
-npx react-native-reusables/cli@latest add [...components]
-```
-
-> e.g. `npx react-native-reusables/cli@latest add input textarea`
-
-If you don't specify any component names, you'll be prompted to select which components to add interactively. Use the `--all` flag to install all available components at once.
-
-## Project Features
-
-- ⚛️ Built with [Expo Router](https://expo.dev/router)
-- 🎨 Styled with [Tailwind CSS](https://tailwindcss.com/) via [Nativewind](https://www.nativewind.dev/)
-- 📦 UI powered by [React Native Reusables](https://github.com/founded-labs/react-native-reusables)
-- 🚀 New Architecture enabled
-- 🔥 Edge to Edge enabled
-- 📱 Runs on iOS, Android, and Web
-
-## Learn More
-
-To dive deeper into the technologies used:
-
-- [React Native Docs](https://reactnative.dev/docs/getting-started)
-- [Expo Docs](https://docs.expo.dev/)
-- [Nativewind Docs](https://www.nativewind.dev/)
-- [React Native Reusables](https://reactnativereusables.com)
-
-## Deploy with EAS
-
-The easiest way to deploy your app is with [Expo Application Services (EAS)](https://expo.dev/eas).
-
-- [EAS Build](https://docs.expo.dev/build/introduction/)
-- [EAS Updates](https://docs.expo.dev/eas-update/introduction/)
-- [EAS Submit](https://docs.expo.dev/submit/introduction/)
-
----
-
-## android dev build
-``` bash
-JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home pnpm expo run:android 2>&1
-```
-## EAS Preview build
-``` bash
 eas build --platform android --profile preview
 ```
 
-## EAS Production build
-``` bash
-eas build --platform android --profile production
-```
+## 📄 License
 
-If you enjoy using React Native Reusables, please consider giving it a ⭐ on [GitHub](https://github.com/founded-labs/react-native-reusables). Your support means a lot!
+This project is private and intended for portfolio/demonstration purposes.
+
+---
+
+*Developed with ❤️ as a practice project.*
