@@ -1,6 +1,6 @@
-# District Clone (Tikiti)
+# District Clone (district)
 
-A premium, high-performance event discovery and booking mobile application built with **React Native** and **Expo**. This project is a feature-rich clone of the District/Tikiti platform, focusing on seamless user experience, interactive seating charts, and modern UI/UX principles.
+A premium, high-performance event discovery and booking mobile application built with **React Native** and **Expo**. This project is a feature-rich clone of the District/district platform, focusing on seamless user experience, interactive seating charts, and modern UI/UX principles.
 
 ## 🚀 Features
 
@@ -10,7 +10,7 @@ A premium, high-performance event discovery and booking mobile application built
 - **Dynamic Search**: Robust search functionality to find events, artists, and venues.
 - **Hotlist**: Save your favorite events for quick access later.
 - **Artist & Category Pages**: Dedicated sections to explore events based on specific artists or genres.
-- **Dark & Light Mode**: Full theme support powered by NativeWind and React Native Reusables.
+- **Dark Mode**: Full theme support powered by NativeWind and React Native Reusables.
 - **Edge-to-Edge Design**: Optimized for modern devices with transparent status bars and navigation bars.
 
 ## 🛠️ Tech Stack
